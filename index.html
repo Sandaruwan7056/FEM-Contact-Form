@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Contact form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Patrick+Hand&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>Contact Us</header>
+      <form action="#" id="form">
+        <div class="form-control ">
+          <div class="first-name">
+            <label for="fname">First Name<span class="required">*</span></label>
+            <input type="text" name="fname" id="fname" />
+            <small class="error">This Feild is required</small>
+          </div>
+          <div class="last-name">
+            <label for="lname">Last Name<span class="required">*</span></label>
+            <input type="text" name="lname" id="lname" />
+            <small class="error">This Feild is required</small>
+          </div>
+        </div>
+        <div class="form-control">
+          <label for="email"
+            >Email Address <span class="required">*</span></label
+          >
+          <input type="text" name="email" id="email" />
+          <small class="error">please enter a valid email</small>
+        </div>
+        <div class="form-control">
+          Query Type
+          <div class="query-area">
+            <div class="options">
+              <input type="radio" name="query-type" id="general" />
+              <label for="general">General Enquiery</label>
+            </div>
+            <div class="options">
+              <input type="radio" name="query-type" id="support" />
+              <label for="support">Support Request</label>
+            </div>
+          </div>
+          <small class="error">please select a query</small>
+        </div>
+        <div class="form-control">
+          <label for="message">Message <span class="required">*</span></label>
+          <textarea name="message" id="message" rows="4"></textarea>
+          <small class="error"> This Feild is Required</small>
+        </div>
+        <div class="form-control">
+          <input type="checkbox" name="terms" id="terms" />
+          <label for="terms">I consent to being contacted by the team</label>
+          <small class="error"> To submit this form, please consent to being contacted</small>
+        </div>
+        
+        <button id="submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="success-message">
+      <span>
+        <img
+          src="./assets/images/icon-success-check.svg"
+          alt="success-message"
+        />Message Sent</span
+      >
+      <p>Thanks for completing the form.We'll be in touch soon</p>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
